@@ -347,7 +347,7 @@ export const WearableSync: React.FC = () => {
 
       {/* Real-time Stats */}
       {googleFitConnected && (
-        <div className="grid gap-4 md:grid-cols-5">
+        <div className="grid gap-4 md:grid-cols-3">
           <Card className="metric-card">
             <CardContent className="p-4">
               <div className="flex items-center justify-between">
@@ -363,20 +363,7 @@ export const WearableSync: React.FC = () => {
             </CardContent>
           </Card>
 
-          <Card className="metric-card">
-            <CardContent className="p-4">
-              <div className="flex items-center justify-between">
-                <div>
-                  <p className="text-sm text-muted-foreground">Heart Rate</p>
-                  <p className="text-2xl font-bold gradient-text">{avgHeartRate} BPM</p>
-                </div>
-                <Heart className="h-8 w-8 text-destructive" />
-              </div>
-              <div className="mt-2">
-                <div className="text-xs text-muted-foreground">Latest</div>
-              </div>
-            </CardContent>
-          </Card>
+
 
           <Card className="metric-card">
             <CardContent className="p-4">
@@ -393,20 +380,6 @@ export const WearableSync: React.FC = () => {
             </CardContent>
           </Card>
 
-          <Card className="metric-card">
-            <CardContent className="p-4">
-              <div className="flex items-center justify-between">
-                <div>
-                  <p className="text-sm text-muted-foreground">Distance</p>
-                  <p className="text-2xl font-bold gradient-text">{distance} km</p>
-                </div>
-                <Activity className="h-8 w-8 text-primary" />
-              </div>
-              <div className="mt-2">
-                <div className="text-xs text-success">↗ Walked</div>
-              </div>
-            </CardContent>
-          </Card>
 
           <Card className="metric-card">
             <CardContent className="p-4">
